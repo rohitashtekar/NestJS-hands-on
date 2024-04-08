@@ -14,12 +14,12 @@ const oldCivic = {
     }
 }
 
-const drink = {
-    color: 'brown',
-    carbonated: true,
-    sugar: 40,
+const  brio = {
+    name: 'brio',
+    year: new Date(),
+    broken: false,
     summary(): string {
-        return `This drink contain ${this.sugar} grams of sugar`;
+        return `This car is named ${this.name}, manufactured by Honda`;
     }
 }
 
@@ -31,3 +31,4 @@ const printDetails = (item: Reportable): void => {
 };
 
 printDetails(oldCivic);
+printDetails(brio);
